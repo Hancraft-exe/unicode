@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character to code</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .card { max-width: 640px; margin: auto; }
+        input { width: 100%; font-size: 16px; padding: 10px; margin-top: 8px; }
+        #charCodeOutput { margin-top: 12px; padding: 10px; border: 1px solid #ccc; min-height: 40px; white-space: pre-wrap; word-break: break-word; font-family: monospace; }
+        button { margin-top: 10px; }
+        a.back { display: inline-block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <a class="back" href="..">← Back to search</a>
+        <h1>Character to Unicode</h1>
+        <p>Type exactly one character and see the Unicode code point:</p>
+        <input id="charCodeInput" type="text" aria-label="Enter one character" placeholder="Type one character..." maxlength="2" autocomplete="off" autocorrect="off" spellcheck="false" autofocus>
+        <div id="charCodeOutput"></div>
+        <button id="copyCharCodes">Copy code</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
